@@ -1,0 +1,25 @@
+/*.polygon {
+    height: 39vh;
+    background: #D82323;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+    position: relative;
+}
+.content
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}*/
+
+.polygon {
+    /*height: 25vh;
+    background: #031442;*/
+    clip-path: polygon(0 0%, 100% 0,100% 100%,0 80%);
+    /*position: relative;*/
+}
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
