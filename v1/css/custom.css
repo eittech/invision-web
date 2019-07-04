@@ -23,3 +23,54 @@
     top: 50%;
     left: 20%;
 }
+
+.container--head {
+    background: #BF3E11;
+}
+
+.tooltip-carousel {
+    position: absolute;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.caraousel-tooltip-item {
+    display: none;
+}
+
+.caraousel-tooltip-item.active {
+    display: block;
+}
+.container--head {
+    background: transparent !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: none !important;
+    color:#898989 !important;
+}
+
+.icon-left-circled::before {
+    margin-top: 112% !important;
+}
+
+.icon-right-circled::before {
+    margin-top: 112% !important;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+}
+
+.carousel-control.right {
+    background-image: none !important;
+}
