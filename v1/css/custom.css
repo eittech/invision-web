@@ -17,6 +17,14 @@
     clip-path: polygon(0 0%, 100% 0,100% 100%,0 80%);
     /*position: relative;*/
 }
+
+.polygon-two {
+    height: 25vh;
+    background: #031442;
+    clip-path: polygon(0% 0px, 364% 100%,0% 100%,0 100%) !important;
+    position: relative;
+}
+
 .content
 {
     position: absolute;
@@ -77,4 +85,10 @@
 
 #Wrapper {
     max-width: 100% !important;
+}
+
+.hr_dots {
+    text-align: center;
+    line-height: 0;
+    margin-top: 5% !important;
 }
