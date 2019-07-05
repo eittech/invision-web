@@ -92,3 +92,18 @@
     line-height: 0;
     margin-top: 5% !important;
 }
+
+/* Project */
+.title-project{
+    margin-left: 84% !important;
+}
+
+.author-date {
+    float: left;
+    width: 287% !important;
+    color: #061f51 !important;
+}
+
+.title-h4{
+    color: #061f51 !important;
+}
