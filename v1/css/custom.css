@@ -107,3 +107,14 @@
 .title-h4{
     color: #061f51 !important;
 }
+
+/* Retina display */
+
+.header-fixed #Top_bar #logo img {
+    max-height: 35px !important;
+}
+
+img.scale-with-grid, #Content img {
+	max-width: 100% !important;
+	height: auto !important;
+}
