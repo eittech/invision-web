@@ -128,5 +128,11 @@ img.scale-with-grid, #Content img {
 	}
 	.logo-overflow #Top_bar .logo {
 		height: auto!important;
-	}
+    }
+    
+    h2 {
+        font-size: 22px !important;
+        line-height: 22px !important;
+        margin-top: 12% !important;
+    }
 }
