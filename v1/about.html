@@ -267,12 +267,12 @@ h1,h2,h3,h4,h5,h6 {
                                                     CEO
                                                 </p>
                                                 <hr class="hr_color">
-                                                <div class="desc">
+                                                <!--<div class="desc">
                                                     <br>
                                                     M  +1 954 998 9996
                                                     <br>
                                                     T  +1 954 843 3501
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
@@ -293,13 +293,13 @@ h1,h2,h3,h4,h5,h6 {
                                                     Partner
                                                 </p>
                                                 <hr class="hr_color">
-                                                <div class="desc">
+                                                <!--<div class="desc">
                                                     <br>
                                                     M  +1 954 909 8020
                                                     <br>
                                                                                                         
                                                     T + 1 954 843 3447
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
@@ -340,7 +340,7 @@ h1,h2,h3,h4,h5,h6 {
                                     <div class="column one-third column_column">
                                         <div class="column_attr ">
                                             <div class="links">
-                                                        <a href="mailto:se@http://invisionrealestateinvestments.com" class="icon_bar icon_bar_small"><span class="t"><i class="icon-mail"></i></span><span class="b"><i class="icon-mail"></i></span></a><a target="_blank" href="https://www.linkedin.com/in/siulmary-evelin-ovalles-manzanilla-567b7b84/" class="icon_bar icon_bar_small"><span class="t"><i class="icon-linkedin"></i></span><span class="b"><i class="icon-linkedin"></i></span></a>
+                                                        <a href="mailto:se@invisionrealestateinvestments.com" class="icon_bar icon_bar_small"><span class="t"><i class="icon-mail"></i></span><span class="b"><i class="icon-mail"></i></span></a><a target="_blank" href="https://www.linkedin.com/in/siulmary-evelin-ovalles-manzanilla-567b7b84/" class="icon_bar icon_bar_small"><span class="t"><i class="icon-linkedin"></i></span><span class="b"><i class="icon-linkedin"></i></span></a>
                                                 </div>
                                         </div>
                                     </div>
@@ -349,7 +349,7 @@ h1,h2,h3,h4,h5,h6 {
                                         <div class="column_attr ">
                                             <div class="links" >
                                                                                                 
-                                                    <a  target="_blank" href="mailto:rl@http://invisionrealestateinvestments.com" class="icon_bar icon_bar_small"><span class="t"><i class="icon-mail"></i></span><span class="b"><i class="icon-mail"></i></span></a><a target="_blank" href="https://www.linkedin.com/in/renato-lerner-a6b32915/" class="icon_bar icon_bar_small"><span class="t"><i class="icon-linkedin"></i></span><span class="b"><i class="icon-linkedin"></i></span></a>
+                                                    <a  target="_blank" href="mailto:rl@invisionrealestateinvestments.com" class="icon_bar icon_bar_small"><span class="t"><i class="icon-mail"></i></span><span class="b"><i class="icon-mail"></i></span></a><a target="_blank" href="https://www.linkedin.com/in/renato-lerner-a6b32915/" class="icon_bar icon_bar_small"><span class="t"><i class="icon-linkedin"></i></span><span class="b"><i class="icon-linkedin"></i></span></a>
                                                 </div>
                                         </div>
                                     </div>
@@ -434,25 +434,24 @@ h1,h2,h3,h4,h5,h6 {
     <script src="js/scripts.js"></script>
 
 	<script id="mfn-dnmc-retina-js">
-        jQuery(window).load(function() {
-            jQuery(".jq-tabs").tabs();
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            if (retina) {
-                var retinaEl = jQuery("#logo img.logo-main");
-                var retinaLogoW = retinaEl.width();
-                var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "images/retina_holding.png").width(retinaLogoW).height(retinaLogoH);
-                var stickyEl = jQuery("#logo img.logo-sticky");
-                var stickyLogoW = stickyEl.width();
-                var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "images/retina_holding.png").width(stickyLogoW).height(stickyLogoH);
-                var mobileEl = jQuery("#logo img.logo-mobile");
-                var mobileLogoW = mobileEl.width();
-                var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "images/retina_holding.png").width(mobileLogoW).height(mobileLogoH);
-            }
-        });
-    </script>
+            jQuery(window).load(function() {
+                var retina = window.devicePixelRatio > 1 ? true : false;
+                if (retina) {
+                    var retinaEl = jQuery("#logo img.logo-main");
+                    var retinaLogoW = retinaEl.width();
+                    var retinaLogoH = retinaEl.height();
+                    retinaEl.attr("src", "images/invision_logo_retina.png").width(retinaLogoW).height(retinaLogoH);
+                    var stickyEl = jQuery("#logo img.logo-sticky");
+                    var stickyLogoW = stickyEl.width();
+                    var stickyLogoH = stickyEl.height();
+                    stickyEl.attr("src", "images/invision_logo_retina.png").width(stickyLogoW).height(stickyLogoH);
+                    var mobileEl = jQuery("#logo img.logo-mobile");
+                    var mobileLogoW = mobileEl.width();
+                    var mobileLogoH = mobileEl.height();
+                    mobileEl.attr("src", "images/invision_logo_retina.png").width(mobileLogoW).height(mobileLogoH);
+                }
+            });
+        </script>
 </body>
 
 </html>

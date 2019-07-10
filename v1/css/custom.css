@@ -107,3 +107,32 @@
 .title-h4{
     color: #061f51 !important;
 }
+
+/* Retina display */
+
+.header-fixed #Top_bar #logo img {
+    max-height: 35px !important;
+}
+
+img.scale-with-grid, #Content img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#Top_bar #logo img.logo-main {
+		display: none !important;
+	}
+	#Top_bar #logo img.logo-mobile {
+		display: inline-block !important;
+	}
+	.logo-overflow #Top_bar .logo {
+		height: auto!important;
+    }
+    
+    h2 {
+        font-size: 22px !important;
+        line-height: 22px !important;
+        margin-top: 12% !important;
+    }
+}
