@@ -136,3 +136,71 @@ img.scale-with-grid, #Content img {
         margin-top: 12% !important;
     }
 }
+
+
+/* Por debajo de 700px */
+    @media screen and (max-width: 480px){
+        .rev_slider .tp-caption, .rev_slider .caption {
+            position: relative;
+            visibility: hidden;
+            white-space: nowrap;
+            display: none !important;
+        }
+
+        .section {
+            background-attachment: scroll !important;
+            height: auto !important;
+            margin: -89px 0px 0px !important;
+        }
+
+        .tp-bgimg{
+            margin: 46px 0px 0px !important;
+        }
+
+        #carousel-example-generic.carousel .slide{
+            margin: 46px 0px 0px !important;
+        }
+
+        #Subheader .title {
+            width: 100%;
+            text-align: center;
+            display: none !important;
+        }
+
+        .minimalist-header-no #Subheader {
+            padding: 112px 0 !important;
+        }
+
+        .desc_wrapper{
+            margin: -72px 0px 0px !important;
+        }
+
+        .title-h3{
+            margin-top: 31% !important;
+        }
+
+        .title-h2{
+            margin-top: -15% !important;
+        }
+
+        .title-h2-project{
+            margin-top: -15% !important;
+        }
+
+        .title-h2-project{
+            margin-top: -41% !important;
+        }
+
+        .title-h2-project-1{
+            margin-top: 28% !important;
+        }
+
+        .title-h2-contact-1{
+            margin: 19% 0% 0% !important;
+        }
+
+        
+        
+
+    }
+    
