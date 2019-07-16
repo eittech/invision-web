@@ -1,0 +1,20 @@
+
+/* Retina */
+
+@media (min-width: 480px) and (max-width: 725px) {
+    img.scale-with-grid, #Content img {
+        max-width: 212% !important;
+        height: 300px !important;
+    }
+
+    div.desc{
+        margin: 0px 0px 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    img.scale-with-grid, #Content img {
+        max-width: 212% !important;
+        height: 257px !important;
+    }
+}

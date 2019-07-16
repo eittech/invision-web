@@ -17,6 +17,15 @@
             <html class="no-js">
                <!--<![endif]-->
                <head>
+                  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143936045-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143936045-1');
+</script>
                   <!-- Basic Page Needs -->
                   <meta charset="utf-8">
                   <title>Invision</title>
@@ -46,10 +55,10 @@
                            <div class="container">
                               <div class="column one">
                                  <div class="top_bar_left clearfix">
-                                    <div class="logo">
-                                       <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo.png" alt=""><img class="logo-mobile scale-with-grid" src="content/holding/images/invision_logov.png" alt="">
-                                       </a>
-                                    </div>
+                                       <div class="logo">
+                                             <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
+                                             </a>
+                                         </div>
                                     <div class="menu_wrapper">
                                        <nav id="menu" class="menu-main-menu-container">
                                           <ul id="menu-main-menu" class="menu">
@@ -789,25 +798,24 @@
                   <script src="js/animations/animations.js"></script>
                   <script src="js/scripts.js"></script>
                   <script id="mfn-dnmc-retina-js">
-                     jQuery(window).load(function() {
-                         jQuery(".jq-tabs").tabs();
-                         var retina = window.devicePixelRatio > 1 ? true : false;
-                         if (retina) {
-                             var retinaEl = jQuery("#logo img.logo-main");
-                             var retinaLogoW = retinaEl.width();
-                             var retinaLogoH = retinaEl.height();
-                             retinaEl.attr("src", "images/retina_holding.png").width(retinaLogoW).height(retinaLogoH);
-                             var stickyEl = jQuery("#logo img.logo-sticky");
-                             var stickyLogoW = stickyEl.width();
-                             var stickyLogoH = stickyEl.height();
-                             stickyEl.attr("src", "images/retina_holding.png").width(stickyLogoW).height(stickyLogoH);
-                             var mobileEl = jQuery("#logo img.logo-mobile");
-                             var mobileLogoW = mobileEl.width();
-                             var mobileLogoH = mobileEl.height();
-                             mobileEl.attr("src", "images/retina_holding.png").width(mobileLogoW).height(mobileLogoH);
-                         }
-                     });
-                  </script>
+                        jQuery(window).load(function() {
+                            var retina = window.devicePixelRatio > 1 ? true : false;
+                            if (retina) {
+                                var retinaEl = jQuery("#logo img.logo-main");
+                                var retinaLogoW = retinaEl.width();
+                                var retinaLogoH = retinaEl.height();
+                                retinaEl.attr("src", "images/invision_logo_retina.png").width(retinaLogoW).height(retinaLogoH);
+                                var stickyEl = jQuery("#logo img.logo-sticky");
+                                var stickyLogoW = stickyEl.width();
+                                var stickyLogoH = stickyEl.height();
+                                stickyEl.attr("src", "images/invision_logo_retina.png").width(stickyLogoW).height(stickyLogoH);
+                                var mobileEl = jQuery("#logo img.logo-mobile");
+                                var mobileLogoW = mobileEl.width();
+                                var mobileLogoH = mobileEl.height();
+                                mobileEl.attr("src", "images/invision_logo_retina.png").width(mobileLogoW).height(mobileLogoH);
+                            }
+                        });
+                    </script>
                </body>
             </html>
 
