@@ -216,6 +216,12 @@ left: 0%;
         }
     }
 
+    @media (max-width: 767px) {
+        h1.title{
+            display: none;
+        }
+    }
+
     
     
     
