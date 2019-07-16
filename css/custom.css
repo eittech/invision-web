@@ -100,7 +100,7 @@ left: 0%;
     max-width: 100% !important;
     height: auto !important;
     }
-    @media only screen and (max-width: 767px) {
+    /*@media only screen and (max-width: 767px) {
     #Top_bar #logo img.logo-main {
     display: none !important;
     }
@@ -115,7 +115,7 @@ left: 0%;
     line-height: 22px !important;
     margin-top: 12% !important;
     }
-    }
+    }*/
     
 
     
