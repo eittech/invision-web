@@ -169,6 +169,11 @@ left: 0%;
             max-width: 212% !important;
             height: 150px !important;
         }
+
+        #Top_bar #logo img.logo-mobile {
+            display: inline-block !important;
+            width: 40% !important;
+        }
         
     }
 
@@ -225,12 +230,14 @@ left: 0%;
             max-width: 212% !important;
             height: 257px !important;
         }
+
+        #Top_bar #logo img.logo-mobile {
+            display: inline-block !important;
+            width: 80% !important;
+        }
     }
 
     @media (max-width: 767px) {
-        h1.title{
-            display: none;
-        }
         
         img.scale-with-grid, #Content img {
             max-width: 212% !important;
