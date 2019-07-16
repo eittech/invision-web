@@ -164,6 +164,12 @@ left: 0%;
         .title-h2-contact-1{
         margin: 19% 0% 0% !important;
         }
+
+        img.scale-with-grid, #Content img {
+            max-width: 212% !important;
+            height: 150px !important;
+        }
+        
     }
 
 
@@ -214,11 +220,21 @@ left: 0%;
         .title-h2-contact-1{
         margin: 19% 0% 0% !important;
         }
+
+        img.scale-with-grid, #Content img {
+            max-width: 212% !important;
+            height: 257px !important;
+        }
     }
 
     @media (max-width: 767px) {
         h1.title{
             display: none;
+        }
+        
+        img.scale-with-grid, #Content img {
+            max-width: 212% !important;
+            height: 257px !important;
         }
     }
 
