@@ -1,3 +1,11 @@
+<?php
+// Cargamos el archivo de fijación de idioma
+include "lang.php";
+// Obtiene el nombre de la página actual
+include "check_url.php";
+// Cargamos archivo de configuraciones globales
+include "config.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
@@ -11,7 +19,7 @@
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Invision</title>
+    <title><?php echo $lang['home']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -54,33 +62,12 @@
                         <div class="column one">
                             <div class="top_bar_left clearfix">
                                 <div class="logo">
-                                    <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
+                                    <a id="logo" href="index.php" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
                                     </a>
                                 </div>
-                                <div class="menu_wrapper">
-                                    <nav id="menu" class="menu-main-menu-container">
-                                        <ul id="menu-main-menu" class="menu">
-                                            <li>
-                                                <a href="index.html"><span>Home</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="about.html"><span>Nós</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="invest.html"><span>Investir</span></a>
-                                            </li>
-                                            <li class="current_page_item">
-                                                <a href="project.html"><span>Projetos</span></a>
-                                            </li>
-										    <li>
-                                                <a href="testimonial.html"><span>Depoimentos</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html"><span>Contato</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                                </div>
+                                <!-- Apertura Menu -->
+                                <?php include "menu.php"; ?>
+                                <!-- Cierre Menu -->
                                 <div class="secondary_menu_wrapper"></div>
                                 <div class="banner_wrapper"></div>
                             </div>
@@ -91,7 +78,7 @@
             <div id="Subheader" class="polygon" style="padding:240px 0 180px;background-image: url('images/project_invision_slider.jpg') !important;">
                 <div class="container">
                     <div class="column one">
-                        <h1 class="title">ÚLTIMOS INVESTIMENTOS</h1>
+                        <h1 class="title"><?php echo $lang['project']['header_title']; ?></h1>
                     </div>
                 </div>
             </div>
@@ -107,7 +94,7 @@
                                     <div class="mcb-wrap-inner">
                                            <div class="column mcb-column two column_column">
                                             <div class="column_attr align_center">
-                                               <h2 class="title-h2-project">PROJETOS EM ANDAMENTO</h2>
+                                               <h2 class="title-h2-project"><?php echo $lang['project']['title_h2_project']; ?></h2>
                                                 <hr class="hr_color">
 											</div>
                                            </div>
@@ -119,12 +106,7 @@
                                      </div>
                                   </div>
                                </div>
-
-                        
                         <!--    seccion -->
-                        
-                        
-                        
                         <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap two-fifth  column-margin-10px valign-middle clearfix" style="padding: 0px 0px 0px 3%; height: 520px;">
                                     <div class="mcb-wrap-inner">
@@ -136,32 +118,32 @@
                                                 
                                                 <br>
                                                 <p>
-                                                    DIMENSÕES TERRENO
+                                                    <?php echo $lang['project']['column_attr_p_one']; ?>
                                                 </p>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div style="background: url(images/home_developer3_apartments4.png) no-repeat left top; padding-left: 60px; overflow: hidden; ">
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            FRONTAL
+                                                            <?php echo $lang['project']['sub_title_one']; ?>
                                                         </p>
                                                         <h4>72 Ft</h4>
                                                     </div>
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            TRASEIRO
+                                                            <?php echo $lang['project']['sub_title_two']; ?>
                                                         </p>
                                                         <h4>113,68 Ft</h4>
                                                     </div>
                                                     <hr class="no_line" style="margin:0 auto 1px">
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            LATERAL DIREITO
+                                                            <?php echo $lang['project']['sub_title_three']; ?>
                                                         </p>
                                                         <h4>108 Ft</h4>
                                                     </div>
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            LATERAL ESQUERDO
+                                                            <?php echo $lang['project']['sub_title_four']; ?>
                                                         </p>
                                                         <h4>113 Ft</h4>
                                                     </div>
@@ -169,15 +151,15 @@
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div class="column one-second">
                                                     <div style="background: #f3f2f2; padding: 20px 40px; display: inline-block; font-size: 13px; color: #ababab; font-weight: 800;">
-                                                        ÁREA TERRENO <span style="font-size: 15px;" class="themecolor">10.000 sqft</span>
+                                                        <?php echo $lang['project']['div_column_one']; ?> <span style="font-size: 15px;" class="themecolor">10.000 sqft</span>
                                                     </div>
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second column_column">
                                                     <div class="column_attr ">
                                                         <div class="aligncenter">
-                                                            <a href="project-1117.html" data-hover="Leia mais">
-                                                                <button type="button">Leia mais</button>
+                                                            <a href="project-1117.php" data-hover="<?php echo $lang['project']['button']; ?>">
+                                                                <button type="button"><?php echo $lang['project']['button']; ?></button>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -198,19 +180,13 @@
                                     </div>
                                 </div>
                             </div>
-                        
-                        
-                        
-                        
-                        
-
 							  <div class="section mcb-section" style="padding-top:80px; padding-bottom:40px; ">
                                 <div class="section_wrapper mcb-section-inner">
                                     <div class="wrap mcb-wrap one  valign-top clearfix">
                                        <div class="mcb-wrap-inner">
                                            <div class="column mcb-column two column_column">
                                             <div class="column_attr align_center">
-                                               <h2 class="title-h2-project">PROJETOS FINALIZADOS</h2>
+                                               <h2 class="title-h2-project"><?php echo $lang['project']['title_h2_project_two']; ?></h2>
                                                 <hr class="hr_color">
 											</div>
                                            </div>
@@ -218,9 +194,6 @@
                                      </div>
                                   </div>
                                </div>
-                      
-                        
-                        
                         <!--    seccion -->
                         <div class="section mcb-section equal-height-wrap" style="padding-top:120px; padding-bottom:80px; background-color:#f3f2f2">
                             <div class="section_wrapper mcb-section-inner">
@@ -228,47 +201,44 @@
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix">
-                                                <h5>ÚLTIMOS INVESTIMENTOS</h5>
+                                                <h5><?php echo $lang['project']['column_attr_h5_one']; ?></h5>
                                                 <h2>1719 NE 18th St</h2>
 												<h4>Fort Lauderdale</h4>
                                                 <hr class="no_line" style="margin:0 auto 20px">
                                                 <p>
-                                                    4 Beds - 3 Full Baths - 1 Half Baths
+                                                    <?php echo $lang['project']['div_p_one']; ?>
                                                 </p>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div style="background: url(images/home_developer3_apartments4.png) no-repeat left top; padding-left: 60px; overflow: hidden">
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            TOTAL AREA
+                                                            <?php echo $lang['project']['projeto_1719_sub_title_one']; ?>
                                                         </p>
                                                         <h4>2.485 sqft</h4>
                                                     </div>
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            LOT AREA
+                                                            <?php echo $lang['project']['projeto_1719_sub_title_two']; ?>
                                                         </p>
                                                         <h4>6.300 sqft</h4>
                                                     </div>
                                                     <hr class="no_line" style="margin:0 auto 1px">
                                                     <div class="column one-second">
-                                                        <p style="font-weight:800;margin-bottom:5px">
-                                                            SOLD OUT
-                                                        </p>
-                                                        <h4>March 2019</h4>
+                                                        <?php echo $lang['project']['projeto_1719_precio']; ?>
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div class="column one-second">
                                                     <div style="background: #fff; padding: 20px 40px; display: inline-block; font-size: 13px; color: #ababab; font-weight: 800;">
-                                                        SOLD PRICE <span style="font-size: 15px;" class="themecolor">975.000$</span>
+                                                        <?php echo $lang['project']['projeto_1719_sub_title_three']; ?> <span style="font-size: 15px;" class="themecolor">975.000$</span>
                                                     </div>
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second column_column">
                                                     <div class="column_attr ">
                                                         <div class="aligncenter">
-                                                            <a href="project-1719.html" data-hover="Leia mais">
-                                                                <button type="button">Leia mais</button>
+                                                            <a href="project-1719.php" data-hover="<?php echo $lang['project']['button']; ?>">
+                                                                <button type="button"><?php echo $lang['project']['button']; ?></button>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -301,42 +271,39 @@
 												<h4>Fort Lauderdale</h4>
                                                 <hr class="no_line" style="margin:0 auto 20px">
                                                 <p>
-                                                    3 Beds - 2 Full Baths - 1 Half Baths
+                                                    <?php echo $lang['project']['projeto_1725_sub_title_three']; ?>
                                                 </p>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div style="background: url(images/home_developer3_apartments4.png) no-repeat left top; padding-left: 60px; overflow: hidden; ">
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            TOTAL AREA
+                                                            <?php echo $lang['project']['projeto_1725_sub_title_one']; ?>
                                                         </p>
                                                         <h4>2.485 sqft</h4>
                                                     </div>
                                                     <div class="column one-second">
                                                         <p style="font-weight:800;margin-bottom:5px">
-                                                            LOT AREA
+                                                            <?php echo $lang['project']['projeto_1725_sub_title_two']; ?>
                                                         </p>
                                                         <h4>6.300 sqft</h4>
                                                     </div>
                                                     <hr class="no_line" style="margin:0 auto 1px">
                                                     <div class="column one-second">
-                                                        <p style="font-weight:800;margin-bottom:5px">
-                                                            SOLD OUT
-                                                        </p>
-                                                        <h4>March 2019</h4>
+                                                        <?php echo $lang['project']['projeto_1725_precio']; ?>
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                                 <div class="column one-second">
                                                     <div style="background: #f3f2f2; padding: 20px 40px; display: inline-block; font-size: 13px; color: #ababab; font-weight: 800;">
-                                                        SOLD PRICE <span style="font-size: 15px;" class="themecolor">880.000$</span>
+                                                    <?php echo $lang['project']['projeto_1725_sub_title_four']; ?> <span style="font-size: 15px;" class="themecolor">880.000$</span>
                                                     </div>
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second column_column">
                                                     <div class="column_attr ">
                                                         <div class="aligncenter">
-                                                            <a href="project-1725.html" data-hover="Leia mais">
-                                                                <button type="button">Leia mais</button>
+                                                            <a href="project-1725.php" data-hover="<?php echo $lang['project']['button']; ?>">
+                                                                <button type="button"><?php echo $lang['project']['button']; ?></button>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -372,64 +339,9 @@
             </div>
             
         </div>
-        <footer id="Footer" class="clearfix">
-            <div class="widgets_wrapper" style="padding:70px 0 60px;">
-                <div class="container">
-                    <div class="column one-fourth">
-                        <aside class="widget widget_text">
-                            <div class="textwidget">
-                                <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                    <div class="image_wrapper"><img class="scale-with-grid" src="images/invision_179x184.png" alt="" width="179" height="184" />
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="column one-fourth">
-                        <aside class="widget widget_text">
-                            <h4>Últimos Investimentos</h4>
-                            <div class="textwidget">
-                                <ul style="line-height: 32px;">
-                                    <li>
-                                        <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1725.html">1725 NE 18th St – Fort Lauderdale</a>
-                                    </li>
-                                    <li>
-                                        <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1719.html">1719 NE 18th St – Fort Lauderdale</a>
-                                    </li>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="column one-fourth">
-                        <aside class="widget widget_text">
-                            <h4>Aguardamos o seu Contato</h4>
-                            <div class="textwidget">
-                                <p>
-                                    USA +1 954 843 3500
-                                    <br>Escreva para nós: <a href="mailto:info@invisionrealestateinvestments.com">info@invisionrealestateinvestments.com</a>
-                                </p>
-                                <p>
-                                    <br> 4000 Hollywood Blvd. Suíte 555S
-										Hollywood, Flórida, USA, 33021.
-                                </p>
-                                <p class="contact_icons">
-                                    <span>Encontre-nos aqui:</span><a target="_blank" rel="nofollow" style="font-size: 22px;"  href="https://www.linkedin.com/company/invisionrealestate"><br><i class="icon-linkedin-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" href="https://www.facebook.com/invisionrealestateinvestments"><i class="icon-facebook-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" target="_blank" rel="nofollow" href="https://www.instagram.com/invisionrealestate"><i class="icon-instagram"></i></a>
-                                </p>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_copy">
-                <div class="container">
-                    <div class="column one">
-                        <div class="copyright">
-                            &copy; 2019 Invision Real Estate Investments - Powered by <a target="_blank" rel="nofollow" href="http://eittech.net/">eittech.net</a>
-                        </div>
-                        <ul class="social"></ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <!-- Apertura Footer -->
+        <?php include "footer.php"; ?>
+        <!-- Cierre Footer -->
     </div>
 
     <!-- JS -->

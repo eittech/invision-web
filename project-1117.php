@@ -1,12 +1,18 @@
-
-
+<?php
+// Cargamos el archivo de fijación de idioma
+include "lang.php";
+// Obtiene el nombre de la página actual
+include "check_url.php";
+// Cargamos archivo de configuraciones globales
+include "config.php";
+?>
 <!DOCTYPE html>
 <html class="no-js">
    <!--<![endif]-->
    <head>
       <!-- Basic Page Needs -->
       <meta charset="utf-8">
-      <title>Invision</title>
+      <title><?php echo $lang['home']['title']; ?></title>
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Mobile Specific Metas -->
@@ -34,34 +40,12 @@
                   <div class="column one">
                      <div class="top_bar_left clearfix">
                            <div class="logo">
-                                    <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
-                                    </a>
-                                </div>
-                        <div class="menu_wrapper">
-                           <nav id="menu" class="menu-main-menu-container">
-                              <ul id="menu-main-menu" class="menu">
-                                 <li>
-                                    <a href="index.html"><span>Home</span></a>
-                                 </li>
-                                 <li>
-                                    <a href="about.html"><span>Nós</span></a>
-                                 </li>
-                                 <li>
-                                    <a href="invest.html"><span>Investir</span></a>
-                                 </li>
-                                 <li class="current_page_item">
-                                    <a href="project.html"><span>Projetos</span></a>
-                                 </li>
-                                 <li>
-                                    <a href="testimonial.html"><span>Depoimentos</span></a>
-                                 </li>
-                                 <li>
-                                    <a href="contact.html"><span>Contato</span></a>
-                                 </li>
-                              </ul>
-                           </nav>
-                           <a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                        </div>
+                              <a id="logo" href="index.php" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
+                              </a>
+                           </div>
+                           <!-- Apertura Menu -->
+                           <?php include "menu.php"; ?>
+                           <!-- Cierre Menu -->
                         <div class="secondary_menu_wrapper"></div>
                         <div class="banner_wrapper"></div>
                         <div class="search_wrapper">
@@ -140,24 +124,13 @@
          <!-- One Second (1/2) Column -->
          <div class="column one column_column">
             <div class="column_attr ">
-               <h4>LOCALIZAÇÃO E ENQUADRAMENTO TERRENO</h4>
+               <h4><?php echo $lang['project_1117']['div_h4_one']; ?></h4>
             </div>
          </div>
          <!-- One Second (1/2) Column -->
          <div class="column one-second column_column">
             <div class="column_attr ">
-               <p class="big">
-                  Localizado a Norte do
-                  Aeroporto Internacional de
-                  Hollywood, no coração do bairro
-                  habitacional (classe B) de Poinsetta Heights, a duas milhas do centro de Fort Lauderdale, o terreno de forma rectangular com a menor frente para a 18th Street, tem uma orientação predominante de Sul.
-               </p>
-               <p class="big">
-                  Com uma localização privilegiada, dispõem de uma variedade de equipamentos de lazer, ensino e de saúde a menos de 10 min de automóvel.
-               </p>
-               <p class="big">
-                  Com a fantástica praia Atlântica de areia fina a menos de 8 min e o Aeroporto Internacional de Hollywood a 16 min, esta localização é ideal para a fixação de famílias que pretendam aliar uma vida profissional activa com o conforto e lazer de um bairro familiar.
-               </p>
+               <?php echo $lang['project_1117']['div_p_big_one']; ?>
             </div>
          </div>
          <!-- One Third (1/2) Column -->
@@ -182,13 +155,7 @@
          </div>
          <div class="column one-second column_column">
             <div class="column_attr ">
-               <p class="big">
-                  Duas Unidades DUPLEX HOUSES, implantadas num terreno com 10,000 sqft, localizado na 18th Court em Fort Lauderdale, Flórida.
-               </p>
-               <p>
-                  Cada Unidade tem um total de área climatizada de 2.500 sqft e de 800 sqft de área coberta.
-                  Compostas por Hall de Entrada, Sala com Cozinha integrada, wc social, 3 Suites e Garagem para duas viaturas. Na área exterior de cada Unidade, localiza-se uma Piscina com Zona de Solário, Varanda, Acessos e uma Área Ajardinada.
-               </p>
+               <?php echo $lang['project_1117']['div_p_big_two']; ?>
             </div>
          </div>
          <div class="column one-second column_column">
@@ -272,7 +239,7 @@
          </div>
          <div class="column one column_column">
             <div class="column_attr ">
-               <h4>PONTOS DE INTERESSE</h4>
+               <h4><?php echo $lang['project_1117']['div_title_h4']; ?></h4>
             </div>
          </div>
          <div class="section mcb-section" style="padding-top:90px; padding-bottom:50px; background-repeat:no-repeat;">
@@ -294,47 +261,28 @@
                         <div class="mfn-acc accordion_wrapper open1st">
                            <div class="question active">
                               <div class="title">
-                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;ESCOLAS
+                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1117']['div_question_title_li_one']; ?>
                               </div>
                               <div class="answer" style="display: block;">
+                                    <?php echo $lang['project_1117']['div_answer_one']; ?>
+                              </div>
+                           </div>
+                           <div class="question">
+                              <div class="title">
+                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1117']['div_question_title_li_two']; ?>
+                              </div>
+                              <div class="answer">
                                  <p>
-                                    <span class="big">Bennett Elementary School 1,30 mi 7 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Bayview Elementary School 2,80 mi 9 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Virginia Shuman Young Elementary School 3,00 mi 10 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Fort Lauderdale High School 2,60 mi 6 min. </span>
+                                    <span class="big"><?php echo $lang['project_1117']['div_answer_one_down']; ?></span>
                                  </p>
                               </div>
                            </div>
                            <div class="question">
                               <div class="title">
-                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;HOSPITAL
+                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1117']['div_question_title_li_three']; ?>
                               </div>
                               <div class="answer">
-                                 <p>
-                                    <span class="big">Fort Lauderdale Hospital 3,20 mi 11 min.</span>
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="question">
-                              <div class="title">
-                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;NATUREZA
-                              </div>
-                              <div class="answer">
-                                 <p>
-                                    <span class="big">Holiday Park 2,50 mi 6 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">George English Park 2,80 mi 9 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Praia 3,20 mi 9 min. </span>
-                                 </p>
+                                 <?php echo $lang['project_1117']['div_answer_two']; ?>
                               </div>
                            </div>
                         </div>
@@ -346,30 +294,19 @@
                         <div class="mfn-acc accordion_wrapper open1st toggle">
                            <div class="question">
                               <div class="title">
-                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;COMÉRCIO
+                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1117']['div_question_title_li_four']; ?>
                               </div>
                               <div class="answer" style="display: none;">
-                                 <p>
-                                    <span class="big">Las Olas 3,40 mi 12 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Gateway Shopping Center 2,10 mi 5 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">alleria Fort Lauderdale 2,60 mi 8 min. </span>
-                                 </p>
-                                 <p>
-                                    <span class="big">Plaza Del Mar 2,00 mi 5 min. </span>
-                                 </p>
+                                    <?php echo $lang['project_1117']['div_answer_three']; ?>
                               </div>
                            </div>
                            <div class="question">
                               <div class="title">
-                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;AEROPORTO
+                                 <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1117']['div_question_title_li_five']; ?>
                               </div>
                               <div class="answer" style="display: none;">
                                  <p>
-                                    <span class="big">Fort Lauderdale/Hollywood International Airport 7,40 mi 17 min.</span>
+                                    <span class="big"><?php echo $lang['project_1117']['div_answer_four']; ?></span>
                                  </p>
                               </div>
                            </div>
@@ -382,7 +319,7 @@
          <br>
          <div class="column_attr">
             <div class="flv_style_11">
-               <h4 style="margin-left: 0% !important">ALÇADO</h4>
+               <h4 style="margin-left: 0% !important"><?php echo $lang['project_1117']['flv_style_11_one']; ?></h4>
             </div>
          </div>
          <div class="section mcb-section" style="padding-top:40px; padding-bottom:50px; background-repeat:no-repeat;">
@@ -395,7 +332,7 @@
                      </div>
                   </div>
                   <div class="desc_wrapper">
-                     <p class="big">Alçado Frontal</p>
+                     <p class="big"><?php echo $lang['project_1117']['flv_style_11_p_big_one']; ?></p>
                   </div>
                </div>
             </div>
@@ -408,7 +345,7 @@
                      </div>
                   </div>
                   <div class="desc_wrapper">
-                     <p class="big">Alçado Posterior</p>
+                     <p class="big"><?php echo $lang['project_1117']['flv_style_11_p_big_two']; ?></p>
                   </div>
                </div>
             </div>
@@ -418,7 +355,7 @@
          <br><br>
          <div class="column_attr">
             <div class="flv_style_11">
-               <h4 style="margin-left: 0% !important">PLANTA</h4>
+               <h4 style="margin-left: 0% !important"><?php echo $lang['project_1117']['flv_style_11_two']; ?></h4>
             </div>
          </div>
          <br>
@@ -584,7 +521,7 @@
          <div class="column one column_column" style="margin-top: -13% !important;">
             <div class="column_attr ">
                <div class="section mcb-section" style="padding-top:90px; padding-bottom:50px; background-repeat:no-repeat;">
-                  <h4>LEVANTAMENTO TOPOGRÁFICO DO TERRENO</h4>
+                  <h4><?php echo $lang['project_1117']['section_mcb_section_h4']; ?></h4>
                </div>
             </div>
          </div>
@@ -611,8 +548,8 @@
                         <div class="animate zoomInLeftLarge" data-anim-type="zoomInLeftLarge">
                            <span class="icon_top"><i class="icon-dot-3"></i></span>
                            <h4 class="title">
-                              <a href="project.html">
-                              <button type="button">Retornar aos projetos</button>
+                              <a href="project.php">
+                              <button type="button"><?php echo $lang['project_1117']['return_button']; ?></button>
                               </a>
                            </h4>
                         </div>

@@ -1,3 +1,11 @@
+<?php
+// Cargamos el archivo de fijación de idioma
+include "lang.php";
+// Obtiene el nombre de la página actual
+include "check_url.php";
+// Cargamos archivo de configuraciones globales
+include "config.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
@@ -19,7 +27,7 @@
 </script>
         <!-- Basic Page Needs -->
         <meta charset="utf-8">
-        <title>Invision</title>
+        <title><?php echo $lang['home']['title']; ?></title>
         <meta name="description" content="">
         <meta name="author" content="">
 
@@ -53,33 +61,11 @@
                             <div class="column one">
                                 <div class="top_bar_left clearfix">
                                         <div class="logo">
-                                    <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
-                                    </a>
-                                </div>
-                                    <div class="menu_wrapper">
-                                        <nav id="menu" class="menu-main-menu-container">
-                                            <ul id="menu-main-menu" class="menu">
-                                                <li>
-                                                    <a href="index.html"><span>Home</span></a>
-                                                </li>
-                                                <li >
-                                                    <a href="about.html"><span>Nós</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="invest.html"><span>Investir</span></a>
-                                                </li>
-                                                <li class="current_page_item">
-                                                    <a href="project.html"><span>Projetos</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="testimonial.html"><span>Depoimentos</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html"><span>Contato</span></a>
-                                                </li>
-                                            </ul>
-                                        </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                                    </div>
+                                            <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt=""></a>
+                                        </div>
+                                    <!-- Apertura Menu -->
+                                    <?php include "menu.php"; ?>
+                                    <!-- Cierre Menu -->
                                     <div class="secondary_menu_wrapper"></div>
                                     <div class="banner_wrapper"></div>
                                     <div class="search_wrapper">
@@ -147,12 +133,7 @@
                                             <!-- One Second (1/2) Column -->
                                             <div class="column one-second column_column">
                                                 <div class="column_attr ">
-                                                    <p class="big">
-                                                        Single House Family, implantada num terreno com 587,80 m2, localizada na 18th Street em Fort Lauderdale, Flórida. Casa de 2 Pisos, com um total de 306,20 m2, divididos entre o Piso 0 com 197,90 m2 e o Piso 1 com 108,30 m2 .
-                                                    </p>
-                                                    <p>
-                                                        Composta por Hall de Entrada, 2 Suites, 2 Quartos com wc comum, 3.5 Instalações Sanitárias, Sala com Cozinha integrada, Lavandaria e Garagem para duas viaturas. Na área exterior com 389,90 m2, localiza-se uma Piscina com Zona de Solário, Varanda, Acessos e uma Área Ajardinada.
-                                                    </p>
+                                                    <?php echo $lang['project_1719']['div_column_attr_one']; ?>
                                                 </div>
                                             </div>
                                             <!-- One Second (1/2) Column -->
