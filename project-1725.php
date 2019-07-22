@@ -1,5 +1,11 @@
-
-
+<?php
+// Cargamos el archivo de fijación de idioma
+include "lang.php";
+// Obtiene el nombre de la página actual
+include "check_url.php";
+// Cargamos archivo de configuraciones globales
+include "config.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ">
@@ -28,7 +34,7 @@
 </script>
                   <!-- Basic Page Needs -->
                   <meta charset="utf-8">
-                  <title>Invision</title>
+                  <title><?php echo $lang['home']['title']; ?></title>
                   <meta name="description" content="">
                   <meta name="author" content="">
                   <!-- Mobile Specific Metas -->
@@ -56,34 +62,11 @@
                               <div class="column one">
                                  <div class="top_bar_left clearfix">
                                        <div class="logo">
-                                    <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt="">
-                                    </a>
-                                </div>
-                                    <div class="menu_wrapper">
-                                       <nav id="menu" class="menu-main-menu-container">
-                                          <ul id="menu-main-menu" class="menu">
-                                             <li>
-                                                <a href="index.html"><span>Home</span></a>
-                                             </li>
-                                             <li >
-                                                <a href="about.html"><span>Nós</span></a>
-                                             </li>
-                                             <li>
-                                                <a href="invest.html"><span>Investir</span></a>
-                                             </li>
-                                             <li class="current_page_item">
-                                                <a href="project.html"><span>Projetos</span></a>
-                                             </li>
-                                             <li>
-                                                <a href="testimonial.html"><span>Depoimentos</span></a>
-                                             </li>
-                                             <li>
-                                                <a href="contact.html"><span>Contato</span></a>
-                                             </li>
-                                          </ul>
-                                       </nav>
-                                       <a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                                    </div>
+                                          <a id="logo" href="index.php" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt=""></a>
+                                       </div>
+                                       <!-- Apertura Menu -->
+                                       <?php include "menu.php"; ?>
+                                       <!-- Cierre Menu -->
                                     <div class="secondary_menu_wrapper"></div>
                                     <div class="banner_wrapper"></div>
                                     <div class="search_wrapper">
@@ -145,12 +128,7 @@
                   <!-- One Second (1/2) Column -->
                   <div class="column one-second column_column">
                      <div class="column_attr ">
-                        <p class="big">
-                            Single House Family, implantada num terreno com 587,80 m2, localizada na 18th Street em Fort Lauderdale, Flórida.
-                            Casa de 2 Pisos, com um total de 306,20 m2, divididos entre o Piso 0 com 197,90 m2 e o Piso 1 com 108,30 m2 .
-                            Composta por Hall de Entrada, 2 Suites, 2 Quartos com wc comum, 3.5 Instalações Sanitárias, Sala com Cozinha integrada, Lavandaria e Garagem para duas viaturas.
-                            Na área exterior com 389,90 m2, localiza-se uma Piscina com Zona de Solário, Varanda, Acessos e uma Área Ajardinada.
-                        </p>
+                        <?php echo $lang['project_1725']['content_1']; ?>
                      </div>
                   </div>
                   <!-- One Second (1/2) Column -->
@@ -304,7 +282,7 @@
                      </div>
                   </div>
 
-                  <h4 style="margin-left: 0% !important">ALÇADOS</h4>
+                  <h4 style="margin-left: 0% !important"><?php echo $lang['project_1725']['content_2']; ?></h4>
                         
                         <!-- One Third (1/3) Column -->
                         <div class="column one-third column_our_team">
@@ -315,7 +293,7 @@
                                       </div>
                                    </div>
                                    <div class="desc_wrapper">
-                                      <p class="big">Alçado Frontal</p>
+                                      <p class="big"><?php echo $lang['project_1725']['content_3']; ?></p>
                                    </div>
                                 </div>
                              </div>
@@ -328,7 +306,7 @@
                                       </div>
                                    </div>
                                    <div class="desc_wrapper">
-                                      <p class="big">Alçado Posterior</p>
+                                      <p class="big"><?php echo $lang['project_1725']['content_4']; ?></p>
                                    </div>
                                 </div>
                              </div>
@@ -340,7 +318,7 @@
                                           </div>
                                        </div>
                                        <div class="desc_wrapper">
-                                          <p class="big">Alçado Dereito</p>
+                                          <p class="big"><?php echo $lang['project_1725']['content_5']; ?></p>
                                        </div>
                                     </div>
                                  </div>
@@ -351,7 +329,7 @@
                         <br><br>
                      </div>
                      
-                     <h4 style="margin-left: 0% !important;margin-top: 4% !important">PLANTAS</h4>
+                     <h4 style="margin-left: 0% !important;margin-top: 4% !important"><?php echo $lang['project_1725']['content_6']; ?></h4>
                      <div class="section mcb-section" style="padding-top:60px; padding-bottom:50px; background-repeat:no-repeat;">
                         <!-- One Third (1/3) Column -->
                         <div class="column one-third column_our_team">
@@ -362,7 +340,7 @@
                                  </div>
                               </div>
                               <div class="desc_wrapper">
-                                 <p class="big">Piso 0</p>
+                                 <p class="big"><?php echo $lang['project_1725']['content_7']; ?></p>
                               </div>
                            </div>
                            
@@ -376,7 +354,7 @@
                                  </div>
                               </div>
                               <div class="desc_wrapper">
-                                 <p class="big">Piso 1</p>
+                                 <p class="big"><?php echo $lang['project_1725']['content_8']; ?></p>
                               </div>
                            </div>
                         </div>
@@ -405,24 +383,13 @@
                             <!-- One Second (1/2) Column -->
                             <div class="column one column_column">
                               <div class="column_attr ">
-                                <h4>LOCALIZAÇÃO E ENQUADRAMENTO TERRENO</h4>
+                                <h4><?php echo $lang['project_1725']['content_9']; ?></h4>
                               </div>
                             </div>
                             <!-- One Second (1/2) Column -->
                             <div class="column one-second column_column">
                               <div class="column_attr ">
-                                <p class="big">
-                                        Localizado a Norte do
-                                        Aeroporto Internacional de
-                                        Hollywood, no coração do bairro
-                                        habitacional (classe B) de Poinsetta Heights, a duas milhas do centro de Fort Lauderdale, o terreno de forma rectangular com a menor frente para a 18th Street, tem uma orientação predominante de Sul.
-                                </p>
-                                <p class="big">
-                                        Com uma localização privilegiada, dispõem de uma variedade de equipamentos de lazer, ensino e de saúde a menos de 10 min de automóvel.
-                                </p>
-                                <p class="big">
-                                        Com a fantástica praia Atlântica de areia fina a menos de 8 min e o Aeroporto Internacional de Hollywood a 16 min, esta localização é ideal para a fixação de famílias que pretendam aliar uma vida profissional activa com o conforto e lazer de um bairro familiar.
-                                </p>
+                                 <?php echo $lang['project_1725']['content_10']; ?>
                               </div>
                             </div>
                             <!-- One Third (1/2) Column -->
@@ -560,7 +527,7 @@
                                  <!-- One Second (1/2) Column -->
                                  <div class="column one-second column_column">
                                     <div class="column_attr ">
-                                       <h4>DETALHES DO PISO</h4>
+                                       <h4><?php echo $lang['project_1725']['content_11']; ?></h4>
                                     </div>
                                  </div>
                                  <!-- One Second (1/2) Column 
@@ -576,65 +543,26 @@
                                     <div class="mfn-acc accordion_wrapper open1st">
                                        <div class="question active">
                                           <div class="title">
-                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;ÁREA DO LOTE
+                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1725']['content_12']; ?>
                                           </div>
                                           <div class="answer">
-                                             <p>
-                                                <span class="big">Área Terreno - 546,20 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Área de Implantação - 192,10 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Área Exterior - 354,10 m2</span>
-                                             </p>
+                                                <?php echo $lang['project_1725']['content_13']; ?>
                                           </div>
                                        </div>
                                        <div class="question">
                                           <div class="title">
-                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;PISO 0
+                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1725']['content_14']; ?>
                                           </div>
                                           <div class="answer">
-                                             <p>
-                                                <span class="big">Hall - 9,90 m2 </span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Sala - 45,70 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Instalação Sanitária Apoio - 4,70 m2 </span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Cozinha - 15,90 m2 </span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Sala de Refeições - 15,10 m2 </span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Garagem - 34,60 m2 </span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Lavandaria - 2,30 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Escada - 5,60 m2</span>
-                                             </p>
+                                                <?php echo $lang['project_1725']['content_15']; ?>
                                           </div>
                                        </div>
                                        <div class="question">
                                           <div class="title">
-                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;SUITE 1
+                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1725']['content_16']; ?>
                                           </div>
                                           <div class="answer">
-                                             <p>
-                                                <span class="big">Quarto - 18,60 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Closet - 6,80 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Instalação Sanitária - 10,80 m2</span>
-                                             </p>
+                                             <?php echo $lang['project_1725']['content_17']; ?>
                                           </div>
                                        </div>
                                     </div>
@@ -646,37 +574,18 @@
                                     <div class="mfn-acc accordion_wrapper open1st toggle">
                                        <div class="question">
                                           <div class="title">
-                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;QUARTO 1
+                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1725']['content_18']; ?>
                                           </div>
                                           <div class="answer" style="display: none;">
-                                             <p>
-                                                <span class="big">Quarto - 20,30 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Closet - 2,60 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Instalação Sanitária - 4,90 m2</span>
-                                             </p>
+                                             <?php echo $lang['project_1725']['content_19']; ?>
                                           </div>
                                        </div>
                                        <div class="question">
                                           <div class="title">
-                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;QUARTO 2
+                                             <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1725']['content_20']; ?>
                                           </div>
                                           <div class="answer" style="display: none;">
-                                             <p>
-                                                <span class="big">Quarto - 14,70 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Closet - 3,60 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Instalação Sanitária Comum - 7,90 m2</span>
-                                             </p>
-                                             <p>
-                                                <span class="big">Circulação - 21,40 m2</span>
-                                             </p>
+                                             <?php echo $lang['project_1725']['content_21']; ?>
                                           </div>
                                        </div>
                                     </div>
@@ -726,8 +635,8 @@
                                           <!-- Animated area -->
                                           <div class="animate zoomInLeftLarge" data-anim-type="zoomInLeftLarge">
                                              <span class="icon_top"><i class="icon-dot-3"></i></span>
-                                             <a rel="nofollow" href="project.html">
-                                                 <button type="button">Retornar aos projetos</button>
+                                             <a rel="nofollow" href="project.php">
+                                                 <button type="button"><?php echo $lang['project_1725']['button']; ?></button>
                                              </a>
                                           </div>
                                        </div>

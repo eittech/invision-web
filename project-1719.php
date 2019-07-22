@@ -61,7 +61,7 @@ include "config.php";
                             <div class="column one">
                                 <div class="top_bar_left clearfix">
                                         <div class="logo">
-                                            <a id="logo" href="index.html" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt=""></a>
+                                            <a id="logo" href="index.php" title="Invision Real Estate Investments"><img class="logo-main   scale-with-grid" src="images/invision_logo.png" alt="Invision - logo" /><img class="logo-sticky scale-with-grid" src="images/invision_logo_retina.png" alt=""><img class="logo-mobile scale-with-grid" src="images/invision_logo.png" alt=""></a>
                                         </div>
                                     <!-- Apertura Menu -->
                                     <?php include "menu.php"; ?>
@@ -133,7 +133,7 @@ include "config.php";
                                             <!-- One Second (1/2) Column -->
                                             <div class="column one-second column_column">
                                                 <div class="column_attr ">
-                                                    <?php echo $lang['project_1719']['div_column_attr_one']; ?>
+                                                    <?php echo $lang['project_1719']['content_1']; ?>
                                                 </div>
                                             </div>
                                             <!-- One Second (1/2) Column -->
@@ -259,7 +259,7 @@ include "config.php";
                                                             <div class="column one column_column">
                                                                 <div class="column_attr ">
                                                                     <div class="section mcb-section" style="padding-top:0px; padding-bottom:50px; background-repeat:no-repeat;">
-                                                                        <h4>ALCADOS</h4>
+                                                                        <h4><?php echo $lang['project_1719']['content_2']; ?></h4>
                                                                     </div>
                                                                 </div>
                                                                 <!-- One Third (1/3) Column -->
@@ -295,7 +295,7 @@ include "config.php";
                                                                 <!-- One Second (1/2) Column -->
                                                                 <div class="column one column_column">
                                                                     <div class="column_attr ">
-                                                                        <h4>PLANTAS</h4>
+                                                                        <h4><?php echo $lang['project_1719']['content_3']; ?></h4>
                                                                     </div>
                                                                 </div>
                                                                 <!-- One Third (1/3) Column -->
@@ -307,7 +307,7 @@ include "config.php";
                                                                             </div>
                                                                         </div>
                                                                         <div class="desc_wrapper">
-                                                                            <p class="big">Piso 0</p>
+                                                                            <p class="big"><?php echo $lang['project_1719']['content_5']; ?></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -320,7 +320,7 @@ include "config.php";
                                                                             </div>
                                                                         </div>
                                                                         <div class="desc_wrapper">
-                                                                            <p class="big">Piso 1</p>
+                                                                            <p class="big"><?php echo $lang['project_1719']['content_6']; ?></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -351,21 +351,13 @@ include "config.php";
 															<!-- One Second (1/2) Column -->
 															<div class="column one column_column">
 																<div class="column_attr ">
-																	<h4>LOCALIZAÇÃO E ENQUADRAMENTO TERRENO</h4>
+																	<h4><?php echo $lang['project_1719']['content_7']; ?></h4>
 																</div>
 															</div>
 															<!-- One Second (1/2) Column -->
 															<div class="column one-second column_column">
 																<div class="column_attr ">
-																	<p class="big">
-																		Localizado a Norte do Aeroporto Internacional de Hollywood, no coração do bairro habitacional (classe B) de Poinsetta Heights, a duas milhas do centro de Fort Lauderdale, o terreno de forma rectangular com a menor frente para a 18th Street, tem uma orientação predominante de Sul.
-																	</p>
-																	<p class="big">
-																		Com uma localização privilegiada, dispõem de uma variedade de equipamentos de lazer, ensino e de saúde a menos de 10 min de automóvel.
-																	</p>
-																	<p class="big">
-																		Com a fantástica praia Atlântica de areia fina a menos de 8 min e o Aeroporto Internacional de Hollywood a 16 min, esta localização é ideal para a fixação de famílias que pretendam aliar uma vida profissional activa com o conforto e lazer de um bairro familiar.
-																	</p>
+                                                                    <?php echo $lang['project_1719']['content_8']; ?>
 																</div>
 															</div>
 															<!-- One Third (1/2) Column -->
@@ -503,7 +495,7 @@ include "config.php";
                                                                         <!-- One Second (1/2) Column -->
                                                                         <div class="column one-second column_column">
                                                                             <div class="column_attr ">
-                                                                                <h4>DETALHES DO PISO</h4>
+                                                                                <h4><?php echo $lang['project_1719']['content_9']; ?></h4>
                                                                             </div>
                                                                         </div>
                                                                         <!-- One Second (1/2) Column 
@@ -519,67 +511,27 @@ include "config.php";
                                                                             <div class="mfn-acc accordion_wrapper open1st">
                                                                                 <div class="question active">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;ÁREA DO LOTE
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_10']; ?>
                                                                                     </div>
                                                                                     <div class="answer">
-                                                                                        <p>
-                                                                                            <span class="big">Área Terreno - 587,80 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Área de Implantação - 197,90 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Área Exterior - 389,90 m2</span>
-                                                                                        </p>
-
+                                                                                        <?php echo $lang['project_1719']['content_11']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="question">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;PISO 0
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_12']; ?>
 
                                                                                     </div>
                                                                                     <div class="answer">
-                                                                                        <p>
-                                                                                            <span class="big">Hall - 7,70 m2 </span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Sala - 40,90 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Instalação Sanitária Apoio - 3,10 m2 </span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Cozinha - 17,80 m2 </span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Arrecadação - 2,00 m2 </span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Garagem - 37,40 m2 </span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Lavandaria - 4,70 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Escada - 9,60 m2</span>
-                                                                                        </p>
+                                                                                        <?php echo $lang['project_1719']['content_13']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="question">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;SUITE 1
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_14']; ?>
                                                                                     </div>
                                                                                     <div class="answer">
-                                                                                        <p>
-                                                                                            <span class="big">Quarto - 24,70 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Closet - 6,90 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Instalação Sanitária - 14,60 m2</span>
-                                                                                        </p>
+                                                                                        <?php echo $lang['project_1719']['content_15']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -591,45 +543,27 @@ include "config.php";
                                                                             <div class="mfn-acc accordion_wrapper open1st toggle">
                                                                                 <div class="question">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;QUARTO 2
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_16']; ?>
                                                                                     </div>
                                                                                     <div class="answer" style="display: none;">
-                                                                                        <p>
-                                                                                            <span class="big">Quarto - 19,80 m2</span>
-                                                                                        </p>
+                                                                                        <?php echo $lang['project_1719']['content_17']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="question">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;QUARTO 3
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_18']; ?>
                                                                                     </div>
                                                                                     <div class="answer" style="display: none;">
-                                                                                        <p>
-                                                                                            <span class="big">Quarto - 18,30 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Instalação Sanitária Comum - 7,90 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Circulação - 8,50 m2</span>
-                                                                                        </p>
+                                                                                        <?php echo $lang['project_1719']['content_19']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="question">
                                                                                     <div class="title">
-                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;SUITE 2
+                                                                                        <i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;<?php echo $lang['project_1719']['content_20']; ?>
 
                                                                                     </div>
                                                                                     <div class="answer" style="display: none;">
-                                                                                        <p>
-                                                                                            <span class="big">Quarto - 20,30 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Closet - 2,60 m2</span>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <span class="big">Instalação Sanitária - 4,90 m2</span>
-                                                                                        </p>
+                                                                                        <?php echo $lang['project_1719']['content_21']; ?>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -650,8 +584,8 @@ include "config.php";
                                                                                 <div class="animate zoomInLeftLarge" data-anim-type="zoomInLeftLarge">
                                                                                     <span class="icon_top"><i class="icon-dot-3"></i></span>
                                                                                     <h4 class="title">
-																					  <a href="project.html">
-																					  <button type="button">Retornar aos projetos</button>
+																					  <a href="project.php">
+																					  <button type="button"><?php echo $lang['project_1719']['button']; ?></button>
 																					  </a>
 																				   </h4>
 
