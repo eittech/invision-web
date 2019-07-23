@@ -13,21 +13,21 @@
             </div>
             <div class="column one-fourth">
                 <aside class="widget widget_text">
-                    <h4><?php echo $lang['home']['footer_title_one']; ?></h4>
+                    <h4><?php echo $lang['footer']['footer_title_one']; ?></h4>
                     <div class="textwidget">
                         <ul style="line-height: 32px;">
                             <li>
-                                <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1725.html">1725 NE 18th St – Fort Lauderdale</a>
+                                <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1725.php">1725 NE 18th St – Fort Lauderdale</a>
                             </li>
                             <li>
-                                <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1719.html">1719 NE 18th St – Fort Lauderdale</a>
+                                <i style="color: #b2a475;" class="icon-right-dir"></i><a href="project-1719.php">1719 NE 18th St – Fort Lauderdale</a>
                             </li>
                     </div>
                 </aside>
             </div>
             <div class="column one-fourth">
                 <aside class="widget widget_text">
-                    <h4><?php echo $lang['home']['footer_title_two']; ?></h4>
+                    <h4><?php echo $lang['footer']['footer_title_two']; ?></h4>
                     <div class="textwidget">
                         <p>
                             USA +1 954 843 3500
@@ -38,7 +38,7 @@
                                 Hollywood, Flórida, USA, 33021.
                         </p>
                         <p class="contact_icons">
-                            <span><?php echo $lang['home']['footer_contact_icons']; ?>:</span><a target="_blank" rel="nofollow" style="font-size: 22px;"  href="https://www.linkedin.com/company/invisionrealestate"><br><i class="icon-linkedin-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" href="https://www.facebook.com/invisionrealestateinvestments"><i class="icon-facebook-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" target="_blank" rel="nofollow" href="https://www.instagram.com/invisionrealestate"><i class="icon-instagram"></i></a>
+                            <span><?php echo $lang['footer']['footer_contact_icons']; ?>:</span><a target="_blank" rel="nofollow" style="font-size: 22px;"  href="https://www.linkedin.com/company/invisionrealestate"><br><i class="icon-linkedin-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" href="https://www.facebook.com/invisionrealestateinvestments"><i class="icon-facebook-circled"></i></a><a target="_blank" rel="nofollow" style="font-size: 22px;" target="_blank" rel="nofollow" href="https://www.instagram.com/invisionrealestate"><i class="icon-instagram"></i></a>
                         </p>
                     </div>
                 </aside>

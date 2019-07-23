@@ -22,7 +22,7 @@ $lang['project']['projeto_1719_precio'] = "<p style='font-weight:800;margin-bott
                                             VENDIDO
                                             </p>
                                             <h4>MAR <br>2019</h4>";
-
+$lang['project']['h5_attr_title_1'] = "ÚLTIMOS INVESTIMENTOS";
 $lang['project']['projeto_1725_sub_title_three'] = "4 Quartos - 3 Banheiros - 1 Lavabo";
 $lang['project']['projeto_1725_sub_title_one'] = "ÁREA TOTAL";
 $lang['project']['projeto_1725_sub_title_two'] = "ÁREA DE LOTE";

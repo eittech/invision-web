@@ -266,7 +266,7 @@ include "config.php";
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix">
-                                               <h5>ÚLTIMOS INVESTIMENTOS</h5>
+                                               <h5><?php echo $lang['project']['h5_attr_title_1']; ?></h5>
                                                 <h2>1725 NE 18th St</h2>
 												<h4>Fort Lauderdale</h4>
                                                 <hr class="no_line" style="margin:0 auto 20px">
