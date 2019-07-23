@@ -25,22 +25,22 @@
     <nav id="menu" class="menu-main-menu-container">
         <ul id="menu-main-menu" class="menu">
             <li class="<?php echo $current_page_item_1; ?>">
-                <a href="index.php"><span><?php echo $lang['menu']['home']; ?></span></a>
+                <a href="index.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['home']; ?></span></a>
             </li>
             <li class="<?php echo $current_page_item_2; ?>">
-                <a href="about.php"><span><?php echo $lang['menu']['about']; ?></span></a>
+                <a href="about.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['about']; ?></span></a>
             </li>
             <li class="<?php echo $current_page_item_3; ?>">
-                <a href="invest.php"><span><?php echo $lang['menu']['invest']; ?></span></a>
+                <a href="invest.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['invest']; ?></span></a>
             </li>
             <li class="<?php echo $current_page_item_4; ?>">
-                <a href="project.php"><span><?php echo $lang['menu']['project']; ?></span></a>
+                <a href="project.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['project']; ?></span></a>
             </li>
             <li class="<?php echo $current_page_item_5; ?>">
-                <a href="testimonial.php"><span><?php echo $lang['menu']['testimonial']; ?></span></a>
+                <a href="testimonial.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['testimonial']; ?></span></a>
             </li>
             <li class="<?php echo $current_page_item_6; ?>">
-                <a href="contact.php"><span><?php echo $lang['menu']['contact']; ?></span></a>
+                <a href="contact.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['contact']; ?></span></a>
             </li>
         </ul>
     </nav>
