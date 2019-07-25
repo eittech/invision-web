@@ -24,18 +24,18 @@ if(isset($_GET['lang'])){
 		
 		$idiom = "";
 		
-		include "lang/pt/menu.php";
-		include "lang/pt/language.php";
-		include "lang/pt/home.php";
-		include "lang/pt/about.php";
-		include "lang/pt/invest.php";
-		include "lang/pt/project.php";
-		include "lang/pt/project-1117.php";
-		include "lang/pt/project-1719.php";
-		include "lang/pt/project-1725.php";
-        include "lang/pt/testimonial.php";
-        include "lang/pt/contact.php";
-		include "lang/pt/footer.php";
+		include "lang/en/menu.php";
+		include "lang/en/language.php";
+		include "lang/en/home.php";
+		include "lang/en/about.php";
+		include "lang/en/invest.php";
+		include "lang/en/project.php";
+		include "lang/en/project-1117.php";
+		include "lang/en/project-1719.php";
+		include "lang/en/project-1725.php";
+        include "lang/en/testimonial.php";
+        include "lang/en/contact.php";
+		include "lang/en/footer.php";
 		
 	}
 	
@@ -43,18 +43,18 @@ if(isset($_GET['lang'])){
 	
 	$idiom = "";
 	
-	include "lang/pt/menu.php";
-    include "lang/pt/language.php";
-    include "lang/pt/home.php";
-    include "lang/pt/about.php";
-    include "lang/pt/invest.php";
-	include "lang/pt/project.php";
-	include "lang/pt/project-1117.php";
-	include "lang/pt/project-1719.php";
-	include "lang/pt/project-1725.php";
-    include "lang/pt/testimonial.php";
-    include "lang/pt/contact.php";
-    include "lang/pt/footer.php";
+	include "lang/en/menu.php";
+    include "lang/en/language.php";
+    include "lang/en/home.php";
+    include "lang/en/about.php";
+    include "lang/en/invest.php";
+	include "lang/en/project.php";
+	include "lang/en/project-1117.php";
+	include "lang/en/project-1719.php";
+	include "lang/en/project-1725.php";
+    include "lang/en/testimonial.php";
+    include "lang/en/contact.php";
+    include "lang/en/footer.php";
 	
 }
 ?>
