@@ -6,4 +6,5 @@ $lang['menu']['invest'] = "Invest";
 $lang['menu']['project'] = "Projects";
 $lang['menu']['testimonial'] = "Testimonial";
 $lang['menu']['contact'] = "Contact";
+$lang['menu']['idioma'] = "Language";
 ?>

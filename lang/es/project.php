@@ -3,16 +3,16 @@
 // Textos de datos
 
 // Project
-$lang['project']['button'] = "Leia mais";
+$lang['project']['button'] = "Leer más";
 $lang['project']['header_title'] = "ÚLTIMAS INVERSIONES";
-$lang['project']['title_h2_project'] = "PROJETOS EM ANDAMENTO";
-$lang['project']['column_attr_p_one'] = "DIMENSÕES TERRENO";
-$lang['project']['sub_title_one'] = "FRONTAL";
-$lang['project']['sub_title_two'] = "TRASEIRO";
-$lang['project']['sub_title_three'] = "LATERAL DIREITO";
-$lang['project']['sub_title_four'] = "LATERAL ESQUERDO";
-$lang['project']['div_column_one'] = "ÁREA TERRENO";
-$lang['project']['title_h2_project_two'] = "PROJETOS FINALIZADOS";
+$lang['project']['title_h2_project'] = "PROYECTOS EN CURSO";
+$lang['project']['column_attr_p_one'] = "DIMENSIONES DEL TERRENO";
+$lang['project']['sub_title_one'] = "FRENTE";
+$lang['project']['sub_title_two'] = "PARTE DE ATRÁS";
+$lang['project']['sub_title_three'] = "LATERAL DERECHO";
+$lang['project']['sub_title_four'] = "LATERAL IZQUIERDO";
+$lang['project']['div_column_one'] = "ÁREA DEL TERRENO";
+$lang['project']['title_h2_project_two'] = "PROYECTOS FINALIZADOS";
 $lang['project']['column_attr_h5_one'] = "ÚLTIMAS INVERSIONES";
 $lang['project']['div_p_one'] = "4 Habitaciones - 3 Baños completos - 1 Medio baño";
 $lang['project']['projeto_1719_sub_title_one'] = "ÁREA TOTAL";

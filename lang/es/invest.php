@@ -5,8 +5,7 @@
 // Invest
 $lang['invest']['h1_title'] = "INVERTIR";
 $lang['invest']['column_attr_title_h3'] = "POR QUÉ INVERTIR CON NOSOTROS?";
-$lang['invest']['div_progress_bars_big'] = "Ofrecemos a nuestros clientes lo que buscan
-                                            inversiones seguras con resultados significativos.
+$lang['invest']['div_progress_bars_big'] = "Ofrecemos a nuestros inversores lo que más buscan: inversiones seguras con resultados significativos.
                                             Con nuestra amplia experiencia en el sector
                                             inmobiliario, know how internacional y una visión
                                             de futuro, encontramos siempre las mejores
@@ -18,13 +17,13 @@ $lang['invest']['div_column_attr_p_big_two'] = "<a href='#'>Pagaré</a>
                                                 <a href='#'>Contrato de Empeño</a>
                                                 <br>
                                                 <a href='#'>Garantía.</a>";
-$lang['invest']['div_column_attr_p_big_three'] = "Experiencia, análisis y una elección criteriosa de las inversiones excluyen las probabilidades de fallas.";
+$lang['invest']['div_column_attr_p_big_three'] = "Experiencia, análisis y una elección cuidadosa de las inversiones excluyen las probabilidades de fallas.";
 $lang['invest']['div_column_attr_p_big_four'] = "Inversión vía Escrow – los valores se liberan de acuerdo con las fases del proyecto.";
 $lang['invest']['div_column_attr_p_big_five'] = "Procedimientos con base en las leyes americanas.";
 $lang['invest']['div_column_attr_p_big_six'] = "Inmuebles con estándar compatible con la inversión.";
 $lang['invest']['div_column_attr_content_one'] = "CUALIDADES QUE HACEN LA  DIFERENCIA";
-$lang['invest']['div_p_big_one'] = "Selección criteriosa de los mejores terrenos y regiones para construir<br> Dedicación exclusiva de una constructora con 30 años de experiencia en el sector<br>Retorno y liquidez en hasta 24 meses<br> Operaciones en dólar – moneda confiable y sin volatilidad<br> 
-                                    Construcción de townhouses y single family homes<br>- nmuebles con alta tasa de búsqueda<br>
+$lang['invest']['div_p_big_one'] = "Selección cuidadosa de los mejores terrenos y regiones para construir<br> Dedicación exclusiva de una constructora con 30 años de experiencia en el sector<br>Retorno y liquidez en hasta 24 meses<br> Operaciones en dólar – moneda confiable y sin volatilidad<br> 
+                                    Construcción de townhouses y single family homes<br>- Inmuebles con alta tasa de búsqueda<br>
                                     Mayor poder de decisión – el cliente decide si
                                     rescata la inversión o si mantiene su capital en
                                     INVISION para reinvertir en un nuevo proyecto.";

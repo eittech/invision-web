@@ -40,11 +40,11 @@ $lang['invest']['div_column_attr_h2'] = "<h2>ENHANCE YOUR
                                         INVESTMENT EXPERIENCE</h2>
                                         <h5>BE AN INVISION CLIENT</h5>";
 $lang['invest']['div_p_progress_bars'] = "Fort Lauderdale - Hollywood International Airport,
-                                        receives 25 million passengers/yea.
+                                        receives 25 million passengers/year.
                                         <br>
                                         <br>
                                         Port Everglades, one of the largest ports for cruise ships in the 
-                                        world, receives more than 3. 7 million passengers/yea.
+                                        world, receives more than 3. 7 million passengers/year.
                                         <br>
                                         Population: 178000 people.
                                         <br>

@@ -160,24 +160,24 @@ include "config.php";
                                         </div>
                                         <div class="column mcb-column two-third column_column">
                                             <div class="column_attr align_center">
-                                                <h2>Escreva-nos</h2>
+                                                <h2><?php echo $lang['contact']['title_contact']; ?></h2>
                                                 <hr class="no_line" style="margin: 0 auto 25px;" />
                                                 <div id="contactWrapper">
                                                     <form id="contactform">
                                                         <div class="column one-second">
-                                                            <input placeholder="seu nome" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                            <input placeholder="<?php echo $lang['contact']['name']; ?>" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
                                                         </div>
                                                         <div class="column one-second">
-                                                            <input placeholder="Seu email" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                            <input placeholder="<?php echo $lang['contact']['email']; ?>" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
                                                         </div>
                                                         <div class="column one">
-                                                            <input placeholder="Sujeito" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                            <input placeholder="<?php echo $lang['contact']['subject']; ?>" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
                                                         </div>
                                                         <div class="column one">
-                                                            <textarea placeholder="Mensagem" name="body" id="body" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                            <textarea placeholder="<?php echo $lang['contact']['message']; ?>" name="body" id="body" style="width:100%;" rows="10" aria-invalid="false"></textarea>
                                                         </div>
                                                         <div class="column one">
-                                                            <input type="button" value="Enviar Mensagem" id="submit" onClick="return check_values();">
+                                                            <input type="button" value="<?php echo $lang['contact']['send']; ?>" id="submit" onClick="return check_values();">
                                                         </div>
                                                     </form>
                                                 </div>

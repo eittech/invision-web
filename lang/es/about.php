@@ -33,7 +33,7 @@ $lang['about']['column_attr_p_big_one'] = "La base de INVISION Real Estate Inves
                                         con los inversionistas, clientes, proveedores,
                                         colegas y accionistas.";
 $lang['about']['column_attr_h4_two'] = "EXCELENCIA";
-$lang['about']['column_attr_p_big_two'] = "Perseguimos, incansablemente, la excelencia entodo lo que hacemos, todos los días.";
+$lang['about']['column_attr_p_big_two'] = "Perseguimos, incansablemente, la excelencia en todo lo que hacemos, todos los días.";
 $lang['about']['column_attr_h4_three'] = "COMUNICACIÓN";
 $lang['about']['column_attr_p_big_three'] = "Mantemos de forma fluida, sincera y transparente las 
                                             relaciones y las conexiones con los miembros de 

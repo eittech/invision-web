@@ -15,10 +15,10 @@ $lang['home']['column_one_second_p_one'] = "Somos una sólida compañía de inve
                                             tasas más altas de interés del mercado, con
                                             garantías y protección del capital invertido.";
 $lang['home']['column_one_second_p_two'] = "Siga adelante y conozca un poco más sobre INVISION REAL ESTATE INVESTMENTS.";
-$lang['home']['section_wrapper'] = "O QUE NOSSOS CLIENTES FALAM";
-$lang['home']['carousel_caption_desc_one'] = "Fiquei muito satisfeito com o resultado e renovei o investimento com a empresa em outro projeto de construção.";
-$lang['home']['carousel_caption_desc_two'] = "Até agora estou muito satisfeito dos resultados da empresa, recomendo para qualquer fazer negócio com eles.";
-$lang['home']['carousel_caption_desc_three'] = "Definitivamente vou fazer parte do desenvolvimento futuro da Invision.";
+$lang['home']['section_wrapper'] = "LO QUE DICEN NUESTROS CLIENTES";
+$lang['home']['carousel_caption_desc_one'] = "Quedé muy satisfecho con el resultado y renové la inversión con la empresa en otro proyecto de construcción.";
+$lang['home']['carousel_caption_desc_two'] = "Hasta ahora estoy muy satisfecho con los resultados de la compañía, recomiendo a cualquier persona a hacer negocios con ellos.";
+$lang['home']['carousel_caption_desc_three'] = "Definitivamente seré parte del futuro desarrollo de Invision.";
 $lang['home']['footer_title_one'] = "Últimos Investimentos";
 $lang['home']['footer_title_two'] = "Aguardamos o seu Contato";
 $lang['home']['footer_contact_icons'] = "Encontre-nos aqui";

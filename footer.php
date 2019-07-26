@@ -31,7 +31,7 @@
                     <div class="textwidget">
                         <p>
                             USA +1 954 843 3500
-                            <br>Escreva para nós: <a href="mailto:info@invisionrealestateinvestments.com">info@invisionrealestateinvestments.com</a>
+                            <br><?php echo $lang['footer']['info']; ?>: <a href="mailto:info@invisionrealestateinvestments.com">info@invisionrealestateinvestments.com</a>
                         </p>
                         <p>
                             <br> 4000 Hollywood Blvd. Suíte 555S

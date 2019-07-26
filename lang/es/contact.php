@@ -3,9 +3,16 @@
 // Textos de datos
 
 // Contacto
-$lang['contact']['header_title'] = "CONTACT";
-$lang['contact']['title_redes_social'] = "NOS ENCONTRAR";
-$lang['contact']['title_email'] = "ESCREVA PARA NÓS";
-$lang['contact']['title_location'] = "NOS LOCALIZE";
+$lang['contact']['header_title'] = "CONTACTO";
+$lang['contact']['title_redes_social'] = "ENCUÉNTRANOS EN";
+$lang['contact']['title_email'] = "ESCRÍBENOS";
+$lang['contact']['title_location'] = "LOCALÍZANOS";
+// Formualario
+$lang['contact']['title_contact'] = "ESCRÍBENOS";
+$lang['contact']['name'] = "Tu nombre";
+$lang['contact']['email'] = "Tu e-mail";
+$lang['contact']['subject'] = "Asunto";
+$lang['contact']['message'] = "Mensaje";
+$lang['contact']['send'] = "Enviar Mensaje";
 
 ?>
