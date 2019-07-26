@@ -1,4 +1,4 @@
-<footer id="Footer" class="clearfix">
+<footer id="Footer" class="clearfix"  <?php if((int)$footer == 0){echo "style='display:none;'";} ?>>
     <div class="widgets_wrapper" style="padding:70px 0 60px;">
         <div class="container">
             <div class="column one-fourth">

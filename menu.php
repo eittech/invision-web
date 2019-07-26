@@ -26,22 +26,22 @@
 <div class="menu_wrapper">
     <nav id="menu" class="menu-main-menu-container">
         <ul id="menu-main-menu" class="menu">
-            <li class="<?php echo $current_page_item_1; ?>">
+            <li <?php if((int)$index == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_1; ?>">
                 <a href="index.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['home']; ?></span></a>
             </li>
-            <li class="<?php echo $current_page_item_2; ?>">
+            <li <?php if((int)$about == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_2; ?>">
                 <a href="about.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['about']; ?></span></a>
             </li>
-            <li class="<?php echo $current_page_item_3; ?>">
+            <li <?php if((int)$invest == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_3; ?>">
                 <a href="invest.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['invest']; ?></span></a>
             </li>
-            <li class="<?php echo $current_page_item_4; ?>">
+            <li <?php if((int)$project == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_4; ?>">
                 <a href="project.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['project']; ?></span></a>
             </li>
-            <li class="<?php echo $current_page_item_5; ?>">
+            <li <?php if((int)$testimonial == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_5; ?>">
                 <a href="testimonial.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['testimonial']; ?></span></a>
             </li>
-            <li class="<?php echo $current_page_item_6; ?>">
+            <li <?php if((int)$contact == 0){echo "style='display:none;'";} ?> class="<?php echo $current_page_item_6; ?>">
                 <a href="contact.php<?php echo $idiom; ?>"><span><?php echo $lang['menu']['contact']; ?></span></a>
             </li>
             <!-- Menu de idioma -->
