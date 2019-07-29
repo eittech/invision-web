@@ -1,6 +1,9 @@
 <?php
 
-    $idiom_active = $_GET['lang'];
+    $idiom_active = "en";
+    if(isset($_GET['lang'])){
+        $idiom_active = $_GET['lang'];   
+    }
 
     $segment = $_SERVER['PHP_SELF'];
     $segment = explode("/", $segment);

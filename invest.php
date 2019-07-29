@@ -119,7 +119,7 @@ include "config.php";
 										<div class="column mcb-column one-third column_column">
 											<div class="column_attr one column_image ">
                                             <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/invest_invision_garantias_<?php if($_GET['lang'] == ""){ echo "pt"; }else{echo $_GET['lang'];} ?>.png" alt="" width="700" height="935" />
+                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/invest_invision_garantias_<?php if(isset($_GET['lang']) == ""){ echo "pt"; }else{echo $_GET['lang'];} ?>.png" alt="" width="700" height="935" />
                                                 </div>
                                             </div>
                                        		</div>
