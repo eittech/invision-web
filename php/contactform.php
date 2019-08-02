@@ -1,47 +1,81 @@
 <?php
 
  // ++++++++++++++++++++++++++++++++++++
-error_reporting(0);
+//error_reporting(0);
+include 'conexion.php';
+	// Correo principal
+$correo_it_to = "luis@ovalles.net";
 
-  
- // configuration
- 
-$email_it_to = "your_own_email_address@some_domain.com";
+$nombre=$_POST['name'];
+$correo=$_POST['email'];
+$empresa=$_POST['subject'];
+$mensaje=$_POST['body'];
 
-$error_message = "Please complete the form first";
+// Verificamos si existe el registro
+$check = mysqli_query("SELECT * FROM registro WHERE empresa='$empresa'");
+$num_rows = mysqli_num_rows($check);
 
-$rnd=$_POST['rnd'];
-$name=$_POST['name'];
-$email=$_POST['email'];
-$subject=$_POST['subject'];
-$body=$_POST['body'];
+if (count($num_rows) == 0) {
+	
+	//Creamos la consulta de inserción.
+	$query = "INSERT INTO `registro` (`nombre`, `correo`, `empresa`, `mensaje`) VALUES ('$nombre', '$correo', '$empresa', '$mensaje');";
 
-  
-if(!isset($rnd) || !isset($name) || !isset($email) || !isset($subject) || !isset($body)) {
-	echo $error_message;
-    die();
+	//Para ejecutar la consulta necesitamos escribir el siguiente código.
+	$resultado = $conn->query($query);
+
+	// Preparacion de la salida
+	if($resultado){
+
+		// Realizamos la excepcion para verificar errores  producidos en el envio
+		try {
+		    echo "OK";
+		    send_email($nombre, $correo, $empresa, $mensaje, $correo_it_to);
+		} catch (Exception $e) {
+		    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+		}
+	}
+} else {
+	echo "EXISTE";
 }
 
 
-$subject = stripslashes($subject);
-$email_from = $email;
-
-$email_message = "Message submitted by '".stripslashes($name)."', email:".$email_from;
-$email_message .=" on ".date("d/m/Y")."\n\n";
-$email_message .= stripslashes($body);
-$email_message .="\n\n";
-
-// Always set content-type when sending HTML email
+$conn->close();
 
 
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-$headers .= 'From: '.stripslashes($name);
+// Funcion para el envio de email
+function send_email($nombre, $correo, $empresa, $mensaje, $correo_it_to)
+{
+	 // configuration
 
-//$headers .= 'From: <'.$email_from.'>' . "\r\n";
+	$error_message = "Por favor complete el formulario primero";
 
-mail($email_it_to,$subject,$email_message,$headers);
+	  
+	if(!isset($nombre) || !isset($correo) || !isset($empresa) || !isset($mensaje)) {
+		echo $error_message;
+	    die();
+	}
 
+
+	$empresa = stripslashes($empresa);
+	$correo_from = $correo;
+
+	$correo_message = "Mensaje enviado por '".stripslashes($nombre)."', correo:".$correo_from;
+	$correo_message .=" en ".date("d/m/Y")."\n\n";
+	$correo_message .= stripslashes($mensaje);
+	$correo_message .="\n\n";
+
+	// Always set content-type when sending HTML correo
+
+
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
+	$headers .= 'From: '.stripslashes($nombre);
+
+	//$headers .= 'From: <'.$correo_from.'>' . "\r\n";
+
+	mail($correo_it_to,$empresa,$correo_message,$headers);
+
+}
 
 
 ?>
