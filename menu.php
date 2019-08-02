@@ -26,6 +26,13 @@
         $current_page_item_6 = "current_page_item";
     }
 ?>
+
+<style>
+    em, i {
+        font-style: italic;
+        font-size: 26px !important;
+    }
+</style>
 <div class="menu_wrapper">
     <nav id="menu" class="menu-main-menu-container">
         <ul id="menu-main-menu" class="menu">
@@ -51,7 +58,7 @@
                 <li style="display:block;" class="nav-item dropdown hidden-xs hidden-sm submenu last" id="li_language">
                     <a class="nav-link smooth-scroll dropdown-toggle count-info page-scroll" data-toggle="dropdown" href="#" title="Idioma">
                         <!--<img src="images/language.png">-->
-                        <span class="label label-warning" id="span_num_respuestas"><?php echo $lang['menu']['idioma']; ?></span>
+                        <span class="label label-warning" id="span_num_respuestas"><i class="icon-language"></i></span>
                     </a>
                     <ul class="dropdown-menu" style="background-color: rgb(93, 104, 174) !important; color: rgb(255, 255, 255) !important; display: none;">
                         <li <?php if($idiom_active == "pt"){ echo "hidden"; } ?>>

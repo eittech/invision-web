@@ -1,6 +1,6 @@
 <?php
 // Textos de datos de menú
-$lang['menu']['home'] = "Home";
+$lang['menu']['home'] = "Inicio";
 $lang['menu']['about'] = "Nosotros";
 $lang['menu']['invest'] = "Invertir";
 $lang['menu']['project'] = "Proyectos";
