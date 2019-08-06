@@ -146,10 +146,10 @@ include "config.php";
                                 </div>
                             </div>
                         </div>
-                        <div class="hr_wide " hidden>
+                        <div class="hr_wide ">
                           <hr>
                         </div> 
-                        <div class="section mcb-section" style="padding-top:90px; padding-bottom:50px; background-repeat:no-repeat;" hidden>
+                        <div class="section mcb-section" style="padding-top:90px; padding-bottom:50px; background-repeat:no-repeat;">
                             <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap one  valign-top clearfix">
                                     <div class="mcb-wrap-inner">
