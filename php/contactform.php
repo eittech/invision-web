@@ -11,6 +11,10 @@ $correo=$_POST['email'];
 $empresa=$_POST['subject'];
 $mensaje=$_POST['body'];
 
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
+$headers .= 'From: '.stripslashes($correo_it_to);
+
 // Verificamos si existe el registro
 $check = mysqli_query("SELECT * FROM registro WHERE empresa='$empresa'");
 $num_rows = mysqli_num_rows($check);
@@ -45,10 +49,6 @@ $conn->close();
 // Funcion para el envio de email
 function send_email($correo,$empresa,$mensaje,$headers)
 {
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-	$headers .= 'From: '.stripslashes($correo_it_to);
-	//~ if(send_email($nombre, $correo, $empresa, $mensaje, $correo_it_to)){
 	if(mail($correo,$empresa,$mensaje,$headers)){
 	echo "Enviado con exito";
 	}else{
