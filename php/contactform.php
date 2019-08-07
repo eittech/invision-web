@@ -4,7 +4,7 @@
 //error_reporting(0);
 include 'conexion.php';
 	// Correo principal
-$correo_it_to = "luis@ovalles.net";
+$correo_it_to = "info@invisionrealestateinvestments.com";
 
 $nombre=$_POST['name'];
 $correo=$_POST['email'];
@@ -14,6 +14,17 @@ $mensaje=$_POST['body'];
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
 $headers .= 'From: '.stripslashes($correo_it_to);
+
+
+// Funcion para el envio de email
+function send_email($correo,$empresa,$mensaje,$headers)
+{
+	if(mail($correo,$empresa,$mensaje,$headers)){
+	echo "Enviado con exito";
+	}else{
+	echo "No se envio";
+	}
+}
 
 // Verificamos si existe el registro
 $check = mysqli_query("SELECT * FROM registro WHERE empresa='$empresa'");
@@ -29,13 +40,7 @@ if (count($num_rows) == 0) {
 
 	// Preparacion de la salida
 	if($resultado){
-
-		// Realizamos la excepcion para verificar errores  producidos en el envio
-		try {
-		    send_email($correo,$empresa,$mensaje,$headers);
-		} catch (Exception $e) {
-		    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
-		}
+		send_email($correo,$empresa,$mensaje,$headers);
 	}
 } else {
 	echo "EXISTE";
@@ -43,17 +48,5 @@ if (count($num_rows) == 0) {
 
 
 $conn->close();
-
-
-// Funcion para el envio de email
-function send_email($correo,$empresa,$mensaje,$headers)
-{
-	if(mail($correo,$empresa,$mensaje,$headers)){
-	echo "Enviado con exito";
-	}else{
-	echo "No se envio";
-	}
-}
-
 
 ?>
