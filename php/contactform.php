@@ -32,7 +32,6 @@ if (count($num_rows) == 0) {
 
 		// Realizamos la excepcion para verificar errores  producidos en el envio
 		try {
-		    echo "OK";
 		    send_email($correo,$empresa,$mensaje,$headers);
 		} catch (Exception $e) {
 		    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
