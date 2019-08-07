@@ -15,6 +15,17 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
 $headers .= 'From: '.stripslashes($correo_it_to);
 
+
+// Funcion para el envio de email
+function send_email($correo,$empresa,$mensaje,$headers)
+{
+	if(mail($correo,$empresa,$mensaje,$headers)){
+	echo "Enviado con exito";
+	}else{
+	echo "No se envio";
+	}
+}
+
 // Verificamos si existe el registro
 $check = mysqli_query("SELECT * FROM registro WHERE empresa='$empresa'");
 $num_rows = mysqli_num_rows($check);
@@ -37,17 +48,5 @@ if (count($num_rows) == 0) {
 
 
 $conn->close();
-
-
-// Funcion para el envio de email
-function send_email($correo,$empresa,$mensaje,$headers)
-{
-	if(mail($correo,$empresa,$mensaje,$headers)){
-	echo "Enviado con exito";
-	}else{
-	echo "No se envio";
-	}
-}
-
 
 ?>
