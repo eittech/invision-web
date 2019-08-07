@@ -4,7 +4,7 @@
 //error_reporting(0);
 include 'conexion.php';
 	// Correo principal
-$correo_it_to = "luis@ovalles.net";
+$correo_it_to = "info@invisionrealestateinvestments.com";
 
 $nombre=$_POST['name'];
 $correo=$_POST['email'];
@@ -29,13 +29,7 @@ if (count($num_rows) == 0) {
 
 	// Preparacion de la salida
 	if($resultado){
-
-		// Realizamos la excepcion para verificar errores  producidos en el envio
-		try {
-		    send_email($correo,$empresa,$mensaje,$headers);
-		} catch (Exception $e) {
-		    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
-		}
+		send_email($correo,$empresa,$mensaje,$headers);
 	}
 } else {
 	echo "EXISTE";
