@@ -40,7 +40,7 @@ if (count($num_rows) == 0) {
 
 	// Preparacion de la salida
 	if($resultado){
-		send_email($correo,$empresa,$mensaje,$headers);
+		send_email($correo_it_to,$empresa,$mensaje,$headers);
 	}
 } else {
 	echo "EXISTE";
