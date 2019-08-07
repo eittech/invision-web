@@ -13,7 +13,7 @@ $mensaje=$_POST['body'];
 
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-$headers .= 'From: '.stripslashes($correo_it_to);
+$headers .= 'From: '.stripslashes($correo);
 
 
 // Funcion para el envio de email
