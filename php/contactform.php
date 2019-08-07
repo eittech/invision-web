@@ -11,6 +11,10 @@ $correo=$_POST['email'];
 $empresa=$_POST['subject'];
 $mensaje=$_POST['body'];
 
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
+$headers .= 'From: '.stripslashes($correo_it_to);
+
 // Verificamos si existe el registro
 $check = mysqli_query("SELECT * FROM registro WHERE empresa='$empresa'");
 $num_rows = mysqli_num_rows($check);
@@ -28,8 +32,7 @@ if (count($num_rows) == 0) {
 
 		// Realizamos la excepcion para verificar errores  producidos en el envio
 		try {
-		    echo "OK";
-		    send_email($nombre, $correo, $empresa, $mensaje, $correo_it_to);
+		    send_email($correo,$empresa,$mensaje,$headers);
 		} catch (Exception $e) {
 		    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 		}
@@ -43,38 +46,13 @@ $conn->close();
 
 
 // Funcion para el envio de email
-function send_email($nombre, $correo, $empresa, $mensaje, $correo_it_to)
+function send_email($correo,$empresa,$mensaje,$headers)
 {
-	 // configuration
-
-	$error_message = "Por favor complete el formulario primero";
-
-	  
-	if(!isset($nombre) || !isset($correo) || !isset($empresa) || !isset($mensaje)) {
-		echo $error_message;
-	    die();
+	if(mail($correo,$empresa,$mensaje,$headers)){
+	echo "Enviado con exito";
+	}else{
+	echo "No se envio";
 	}
-
-
-	$empresa = stripslashes($empresa);
-	$correo_from = $correo;
-
-	$correo_message = "Mensaje enviado por '".stripslashes($nombre)."', correo:".$correo_from;
-	$correo_message .=" en ".date("d/m/Y")."\n\n";
-	$correo_message .= stripslashes($mensaje);
-	$correo_message .="\n\n";
-
-	// Always set content-type when sending HTML correo
-
-
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-	$headers .= 'From: '.stripslashes($nombre);
-
-	//$headers .= 'From: <'.$correo_from.'>' . "\r\n";
-
-	mail($correo_it_to,$empresa,$correo_message,$headers);
-
 }
 
 
