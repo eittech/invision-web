@@ -17,9 +17,9 @@ $headers .= 'From: '.stripslashes($correo_it_to);
 
 
 // Funcion para el envio de email
-function send_email($correo,$empresa,$mensaje,$headers)
+function send_email($correo_it_to,$empresa,$mensaje,$headers)
 {
-	if(mail($correo,$empresa,$mensaje,$headers)){
+	if(mail($correo_it_to,$empresa,$mensaje,$headers)){
 	echo "Enviado con exito";
 	}else{
 	echo "No se envio";
